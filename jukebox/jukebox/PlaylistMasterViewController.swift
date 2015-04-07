@@ -8,7 +8,7 @@
 
 import UIKit
 
-class  PlaylistMasterViewController: UIViewController {
+class PlaylistMasterViewController: UIViewController {
     
     var playlistsArray: [UIImageView] = []
     
@@ -22,7 +22,8 @@ class  PlaylistMasterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        playlistsArray += [playlistImageView0, playlistImageView1, playlistImageView2, playlistImageView3, playlistImageView4, playlistImageView5]
+        playlistsArray += [playlistImageView0, playlistImageView1, playlistImageView2]
+            // , playlistImageView2, playlistImageView3, playlistImageView4, playlistImageView5]
         
         for index in 0..<playlistsArray.count {
             let playlist = Playlist(index: index)

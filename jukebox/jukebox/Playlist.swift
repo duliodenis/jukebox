@@ -15,12 +15,13 @@ struct Playlist {
     var description: String?
     var icon: UIImage?
     var largeIcon: UIImage?
-    var artists: [String] = []
+    var videos: [String] = []
+    var urls: [String] = []
     var backgroundColor: UIColor = UIColor.clearColor()
     
     init(index: Int) {
-        let musicLibrary = MusicLibrary().library
-        let playlistDictionary = musicLibrary[index]
+        let videoLibrary = VideoLibrary().library
+        let playlistDictionary = videoLibrary[index]
         title = playlistDictionary["title"] as String!
         description = playlistDictionary["description"] as String!
         
@@ -30,7 +31,8 @@ struct Playlist {
         let largeIconName = playlistDictionary["largeIcon"] as String!
         largeIcon = UIImage(named: largeIconName)
         
-        artists += playlistDictionary["artists"] as [String]
+        videos += playlistDictionary["videos"] as [String]
+        urls += playlistDictionary["urls"] as [String]
         
         let colorDictionary = playlistDictionary["backgroundColor"] as [String: CGFloat]
         backgroundColor = rgbColorFromDictionary(colorDictionary)

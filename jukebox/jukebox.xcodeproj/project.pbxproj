@@ -14,8 +14,9 @@
 		6CA801B51ABCC54D00CAF7F1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CA801B31ABCC54D00CAF7F1 /* LaunchScreen.xib */; };
 		6CA801C11ABCC54D00CAF7F1 /* jukeboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA801C01ABCC54D00CAF7F1 /* jukeboxTests.swift */; };
 		6CA801CB1ABCC8E500CAF7F1 /* PlaylistDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA801CA1ABCC8E500CAF7F1 /* PlaylistDetailViewController.swift */; };
-		6CC805271ABDE0E800C6BA34 /* MusicLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC805261ABDE0E800C6BA34 /* MusicLibrary.swift */; };
+		6CC805271ABDE0E800C6BA34 /* VideoLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC805261ABDE0E800C6BA34 /* VideoLibrary.swift */; };
 		6CC805291ABDE21D00C6BA34 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC805281ABDE21D00C6BA34 /* Playlist.swift */; };
+		6CDA88751ACF12B50004F905 /* VideoExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CDA88741ACF12B50004F905 /* VideoExtractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +41,9 @@
 		6CA801BF1ABCC54D00CAF7F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CA801C01ABCC54D00CAF7F1 /* jukeboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jukeboxTests.swift; sourceTree = "<group>"; };
 		6CA801CA1ABCC8E500CAF7F1 /* PlaylistDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistDetailViewController.swift; sourceTree = "<group>"; };
-		6CC805261ABDE0E800C6BA34 /* MusicLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicLibrary.swift; sourceTree = "<group>"; };
+		6CC805261ABDE0E800C6BA34 /* VideoLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoLibrary.swift; sourceTree = "<group>"; };
 		6CC805281ABDE21D00C6BA34 /* Playlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		6CDA88741ACF12B50004F905 /* VideoExtractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoExtractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +90,8 @@
 				6CA801AC1ABCC54D00CAF7F1 /* PlaylistMasterViewController.swift */,
 				6CA801CA1ABCC8E500CAF7F1 /* PlaylistDetailViewController.swift */,
 				6CC805281ABDE21D00C6BA34 /* Playlist.swift */,
-				6CC805261ABDE0E800C6BA34 /* MusicLibrary.swift */,
+				6CC805261ABDE0E800C6BA34 /* VideoLibrary.swift */,
+				6CDA88741ACF12B50004F905 /* VideoExtractor.swift */,
 				6CA801B11ABCC54D00CAF7F1 /* Images.xcassets */,
 				6CA801B31ABCC54D00CAF7F1 /* LaunchScreen.xib */,
 				6CA801A81ABCC54D00CAF7F1 /* Supporting Files */,
@@ -221,10 +224,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CDA88751ACF12B50004F905 /* VideoExtractor.swift in Sources */,
 				6CA801CB1ABCC8E500CAF7F1 /* PlaylistDetailViewController.swift in Sources */,
 				6CA801AD1ABCC54D00CAF7F1 /* PlaylistMasterViewController.swift in Sources */,
 				6CA801AB1ABCC54D00CAF7F1 /* AppDelegate.swift in Sources */,
-				6CC805271ABDE0E800C6BA34 /* MusicLibrary.swift in Sources */,
+				6CC805271ABDE0E800C6BA34 /* VideoLibrary.swift in Sources */,
 				6CC805291ABDE21D00C6BA34 /* Playlist.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

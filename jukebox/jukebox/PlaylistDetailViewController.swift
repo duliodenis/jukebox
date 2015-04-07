@@ -16,9 +16,9 @@ class PlaylistDetailViewController: UIViewController {
     @IBOutlet weak var playlistTitle: UILabel!
     @IBOutlet weak var playlistDescription: UILabel!
     
-    @IBOutlet weak var playlistArtist0: UILabel!
-    @IBOutlet weak var playlistArtist1: UILabel!
-    @IBOutlet weak var playlistArtist2: UILabel!
+    @IBOutlet weak var playlistVideoButton0: UIButton!
+    @IBOutlet weak var playlistVideoButton1: UIButton!
+    @IBOutlet weak var playlistVideoButton2: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,11 +28,18 @@ class PlaylistDetailViewController: UIViewController {
             playlistTitle.text = playlist!.title
             playlistDescription.text = playlist!.description
             
-            playlistArtist0.text = playlist!.artists[0]
-            playlistArtist1.text = playlist!.artists[1]
-            playlistArtist2.text = playlist!.artists[2]
+            playlistVideoButton0.setTitle(playlist!.videos[0], forState: .Normal)
+            playlistVideoButton1.setTitle(playlist!.videos[1], forState: .Normal)
+            playlistVideoButton2.setTitle(playlist!.videos[2], forState: .Normal)
             
         }
+    }
+    
+    @IBAction func videoSelected(sender: UIButton!) {
+        println(sender.tag)
+        var remote = VideoExtractor()
+        remote.fetchVideoURLFromURL(playlist!.urls[sender.tag])
+        remote.connect(playlist!.urls[sender.tag])
     }
 
 }
